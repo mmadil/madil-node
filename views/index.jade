@@ -1,0 +1,64 @@
+extends layout
+
+
+//- -------------------------------------------------
+//- this is a the header section.
+//- -------------------------------------------------
+
+block content-header
+ h2 "If I had eight hours to chop down a tree, I'd spend the first six of them sharpening my axe." 
+ h4 - Abraham Lincoln.
+
+//- -------------------------------------------------
+//- This is the article section.
+//- -------------------------------------------------
+
+block content-article
+ 
+ - var items = ["C", "C++", "HMTL and HTML5", "CSS and CSS3", "Javascript", "jQuery", "Node.js", "express", "Python", "MySQL", "mongoDB"]
+ 
+ div#about-me
+  hr
+  p Well im a totally in computers and stuff. All i can say is "Yes, it is my thing".
+  p I like to learn more about the things that interests me.
+  p Presently im an persuing my graduation in Computer Science from 
+   | <a href="http://www.amity.edu">Amity University.</a>
+ 
+ hr
+ 
+ div#things
+  p Things I've been learning.
+  ul
+   each item in items
+    li= item
+  hr
+
+ div#certi
+  p And I've achieved these certificates to
+  p Building a Search Engine - <a href="http://www.udacity.com" target="_blank">Udacity.com</a>
+  p Certified Ethical Hacker Expert (CEHE) 
+ 
+  hr
+
+ div#geeky
+  em Its so fun learning when it's all GEEK to me.
+
+//- ----------------------------------------------
+//- This is the footer section.
+//- ---------------------------------------------
+
+block content-footer
+
+ hr
+
+ p find me on 
+  | <a href="https://www.facebook.com/m.adil.14" target="_blank">facebook</a>
+  | you can also mail me at mmadil_14 at yahoo.com
+ p you can checkout my
+  | <a href="https://github.com/mmadil14" target="_blank">github</a>
+  | repository as well.
+ p 
+  | <a href="http://internetdefenseleague.org"><img src="http://internetdefenseleague.org/images/badges/final/footer_badge.png" alt="Member of The Internet Defense League" /></a>
+  | of
+  | <a href="http://internetdefenseleague.org/" target="_blank"> Internet Defence League </a>
+
