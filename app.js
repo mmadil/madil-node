@@ -34,15 +34,15 @@ app.get("/", function (req, res) {
 	res.render("index", {title: "madil.in - blog, hacks and more..."});
 });
 
-app.get("/blog", function (req, res){
+app.get("/blog/?", function (req, res){
 	res.render("blog",{title: "madil.in - blog"});
 });
 
-app.get("/gsoc", function (req, res){
+app.get("/gsoc/?", function (req, res){
 	res.render("gsoc",{title: "Google Summer of Code"});
 });
 
-app.get("/defend-internet-freedom", function(req, res){
+app.get("/defend-internet-freedom/?", function(req, res){
 	res.render("defend-internet-freedom", {title: "Internet Defence League"});
 });
 
