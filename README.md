@@ -1,6 +1,3 @@
-This is www.madil.in developed in node.js
+This was www.madil.in developed in node.js
 
-Might add few more modules : 
-
-blog,
-GSOC - news update
+[No longer in use]
